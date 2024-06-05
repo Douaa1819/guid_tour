@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.js"></script>
+</head>
+<style>
+    /* Custom styles */
+    .sidebar-open #nav-links {
+        transform: translateX(0);
+    }
+
+    #nav-links {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 20;
+        /* Ensure the sidebar is above other content */
+    }
+
+    #nav-links .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-links .close-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    .custom-background {
+        background-image: url('path/to/your/image.jpg');
+        /* Replace with the actual path to your background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+<style>
+    /* Custom styles for the carousel */
+    .carousel-container {
+        position: relative;
+    }
+    .carousel-item {
+        transition: transform 0.5s ease-in-out;
+    }
+    .hidden {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+</style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+<script src="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.js"></script>
+</head>
+
+<body class="min-h-screen bg-zinc-100 p-4">
+    <div class="bg-cover bg-center h-[60vh] md:h-[90vh]" style="background-image: url('img/herosection.jpg');">
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="pages/about.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="pages/destination.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Destination</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div
+            class="container mx-auto px-4 py-8 mt-16 md:mt-32 lg:mt-48 text-center bg-cover bg-center bg-no-repeat custom-background">
+            <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-2 md:mb-4 lg:mb-6">We Find The Best
+                Tours For You</h1>
+            <p class="text-sm md:text-lg lg:text-xl text-white">Amet minim mollit non deserunt ullamco est sit
+                aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-4 md:p-6 mx-auto -mt-32 md:-mt-20 max-w-6xl flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4" style="box-shadow: 0 4px 20px rgba(97, 214, 97, 0.4);">
+        <div class="flex items-center space-x-2 w-full md:w-auto">
+            <div class="bg-green-100 p-2 rounded-full">
+                <img aria-hidden="true" alt="location" src="img/icons/location.svg" />
+            </div>
+            <div>
+                <label class="block text-zinc-700 text-sm md:text-base">Location</label>
+                <select id="locationSelect" class="border-none focus:ring-0 text-sm md:text-base w-full">
+                    <option value="" disabled selected>Select a Destination</option>
+                    <option value="paris">la valley d ourika</option>
+                    <option value="new-york">tizi nocheg </option>
+                    <option value="tokyo">agafay</option>
+                    <option value="tobkal">Sydney</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex items-center space-x-2 w-full md:w-auto">
+            <div class="bg-green-100 p-2 rounded-full">
+                <img aria-hidden="true" alt="guests" src="img/icons/pepole.svg" />
+            </div>
+            <div>
+                <label class="block text-zinc-700 text-sm md:text-base">Guests</label>
+                <input type="number" id="guestsInput" min="0" max="100" step="1" placeholder="How many Guests?" class="border-none focus:ring-0 text-sm md:text-base w-full">
+            </div>
+        </div>
+        <div class="flex items-center space-x-2 w-full md:w-auto">
+            <div class="bg-green-100 p-2 rounded-full">
+                <img aria-hidden="true" alt="date" src="img/icons/date.svg" />
+            </div>
+            <div>
+                <label class="block text-zinc-700 text-sm md:text-base">Date</label>
+                <input type="date" id="dateInput" placeholder="Pick a date" class="border-none focus:ring-0 text-sm md:text-base w-full">
+            </div>
+        </div>
+        <button id="book-button" class="bg-yellow-400 text-black py-2 px-4 md:px-6 border border-black border-solid shadow-lg rounded-2xl box-shadow hover:bg-yellow-600 text-sm md:text-base w-full md:w-auto">Book</button>
+    </div>
+    
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init('q2Lm4pXv-bQeUkHGx'); // Replace with your user ID
+        })();
+
+        const bookButton = document.querySelector('#book-button');
+        const serviceID = 'service_t7m0kdu'; // Replace with your service ID
+        const templateID = 'template_z8sk5ar'; // Replace with your template ID
+
+        // Check if bookButton exists before adding event listener
+        if (bookButton) {
+            bookButton.addEventListener('click', sendBookingInfo);
+        }
+
+        function sendBookingInfo() {
+            // Get the selected values from the form
+            const location = document.querySelector('select').value;
+            const guests = document.querySelector('input[type="number"]').value;
+            const date = document.querySelector('input[type="date"]').value;
+
+            // Construct the email parameters
+            const emailParams = {
+                from_name: 'guidTour',
+                to_name: 'guid',
+                message: `
+      Booking Information:
+      Location: ${location}
+      Number of Guests: ${guests}
+      Date: ${date}
+    `,
+                reply_to: 'ouchinmustapha82@email.com',
+            };
+
+            // Send the email using EmailJS
+            emailjs
+                .send(serviceID, templateID, emailParams)
+                .then(() => {
+                    console.log('Email sent successfully!');
+                    // Show Flowbite modal
+                    const modal = document.createElement('div');
+                    modal.classList.add('fixed', 'z-10', 'inset-0', 'overflow-y-auto');
+                    modal.setAttribute('aria-labelledby', 'modal-title');
+                    modal.setAttribute('role', 'dialog');
+                    modal.setAttribute('aria-modal', 'true');
+                    modal.innerHTML = `
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+          <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                  <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                    Email Sent Successfully
+                  </h3>
+                  <div class="mt-2">
+                    <p class="text-sm text-gray-500">Your booking information has been sent successfully.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal(this)">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+                    document.body.appendChild(modal);
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                    // Show error alert if needed
+                });
+        }
+
+        function closeModal(button) {
+            const modal = button.closest('.fixed');
+            modal.remove();
+        }
+    </script>
+
+
+
+<!--place description start-->
+<section class="w-full md:w-[80vw] mx-auto text-center py-8 mt-16 md:mt-24 lg:mt-32">
+    <h1 class="text-xl md:text-4xl font-bold mb-4">Explore Popular Places</h1>
+    <p class="text-gray-600 mb-8 text-sm md:text-base lg:text-lg">Amet minim mollit non deserunt ullamco est sit
+        aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+    <div class="relative">
+        <img class="w-full mx-auto h-auto rounded-lg" src="img/image2.png" alt="Mountain Image">
+        <div
+            class="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-white rounded-lg shadow-lg transform translate-y-1/2 mx-auto max-w-3xl lg:max-w-4xl">
+            <h2 class="text-lg md:text-2xl font-bold mb-2">Setti Fadma</h2>
+            <p class="text-gray-600 mb-4 text-xs md:text-base lg:text-lg">Amet minim mollit non deserunt ullamco
+                est
+                sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Excepteur sint
+                occaecat cupidatat non proident.</p>
+            <div class="flex flex-wrap justify-center space-x-2 md:space-x-3 lg:space-x-4">
+                <span
+                    class="inline-block bg-purple-100 text-purple-700 text-xs md:text-sm font-semibold px-2 md:px-4 py-1 md:py-2 rounded-full">Public
+                    Transportations</span>
+                <span
+                    class="inline-block bg-green-100 text-green-700 text-xs md:text-sm font-semibold px-2 md:px-4 py-1 md:py-2 rounded-full">Nature
+                    & Adventure</span>
+                <span
+                    class="inline-block bg-yellow-100 text-yellow-700 text-xs md:text-sm font-semibold px-2 md:px-4 py-1 md:py-2 rounded-full">Private
+                    Transportations</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--place description end-->
+
+
+
+
+    <section>
+        <div class="w-[90vw] container mx-auto p-6 mt-[10rem]">
+            <h2 class="text-3xl font-bold mb-2">Popular Destinations</h2>
+            <p class="text-zinc-600 mb-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit</p>
+            <div class="mx-auto">
+                <div id="destinations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Destination cards will be inserted here -->
+                </div>
+            </div>
+            <script>
+                fetch('../destinations.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const container = document.getElementById('destinations');
+                        data.forEach(destination => {
+                            if ([1, 2, 3, 4].includes(destination.id)) {
+                                const card = document.createElement('div');
+                                card.classList.add('bg-white', 'p-4', 'shadow-lg', 'rounded-lg', 'cursor-pointer');
+                                card.innerHTML = `
+                                    <img src="${destination.img}" alt="${destination.title}" class="w-full h-48 object-cover rounded-lg mb-4">
+                                    <h2 class="text-xl font-bold">${destination.title}</h2>
+                                    <p class="text-yellow-500 mt-1"><span class="font-bold">${destination.rating}</span> <span>(${destination.reviews} reviews)</span></p>
+                                    <p class="mt-2 text-gray-600">${destination.description.substring(0, 100)}...</p>
+                                    <p class="mt-2 text-green-500 text-lg font-bold">${destination.price}</p>
+                                `;
+                                card.addEventListener('click', () => {
+                                    localStorage.setItem('selectedDestination', JSON.stringify(destination));
+                                    window.location.href = 'pages/destinationDetails.html';
+                                });
+                                container.appendChild(card);
+                            }
+                        });
+                    });
+            </script>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div
+            class="bg-gradient-to-r from-purple-400 to-blue-500 p-8 md:rounded-lg flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 text-white">
+            <div class="relative">
+                <img src="img/imag1.png" alt="Travel Image" class="rounded-full w-64 h-64 object-cover">
+                <div class="absolute inset-0 rounded-full mix-blend-multiply"></div>
+            </div>
+            <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-2">
+                    <span class="bg-blue-600 text-white text-xs font-semibold py-1 px-3 rounded-full">TRENDING
+                        NOW</span>
+                </div>
+                <h2 class="text-3xl font-bold">Wilderlife of Setti Fadma</h2>
+                <div class="flex items-center space-x-2 mt-2">
+                    <span class="text-sm">Setti Fadma</span>
+                    <span class="text-yellow-400">★ ★ ★ ★ ★</span>
+                    <span class="text-sm">(300 reviews)</span>
+                </div>
+                <p class="mt-4 text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="mt-6 flex items-center space-x-4">
+                    <button class="bg-yellow-500 text-zinc-900 font-semibold py-2 px-4 rounded-lg">Book Now</button>
+                    <button
+                        class="bg-zinc-200 text-zinc-900 font-semibold py-2 px-4 rounded-lg flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                            </path>
+                        </svg>
+                        <span>Save</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--gallery start-->
+    <section class="py-8">
+        <div class="w-[90vw] lg:w-[80vw] mx-auto p-6">
+            <div
+                class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 space-y-4 md:space-y-0">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-black">From The Gallery</h2>
+                    <p class="mt-2 text-gray-600 dark:text-gray-400 text-sm md:text-base">Amet minim mollit non
+                        deserunt
+                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <img src="img/img1.png" alt="Gallery Image 1"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img2.png" alt="Gallery Image 2"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img3.png" alt="Gallery Image 3"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img4.png" alt="Gallery Image 4"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img5.png" alt="Gallery Image 5"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img6.png" alt="Gallery Image 6"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img7.png" alt="Gallery Image 7"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+                <img src="img/img8.png" alt="Gallery Image 8"
+                    class="w-full h-auto rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-none fade-in">
+            </div>
+        </div>
+    </section>
+    <!--gallery end-->
+
+
+    <div class="bg-white dark:bg-zinc-900 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-zinc-900 dark:text-white mb-4">Pourquoi réserver avec nous ?</h2>
+            <p class="text-zinc-500 dark:text-zinc-400 mb-12">
+                Grâce à notre créativité et notre professionnalisme, nous vous assurons des produits originaux, des
+                prestations de qualité et plus de flexibilité en gérant vos séjours à Marrakech, nous vous offrons
+                également une assistance de 24/24 heures disponible en plusieurs langues.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="bg-white dark:bg-zinc-800 p-6 rounded-full shadow-md mb-4">
+                        <img src="https://placehold.co/64x64" alt="Large choix des activités" />
+                    </div>
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-white">Large choix des activités</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white dark:bg-zinc-800 p-6 rounded-full shadow-md mb-4">
+                        <img src="https://placehold.co/64x64" alt="Meilleure qualité de prestation" />
+                    </div>
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-white">Meilleure qualité de prestation
+                    </h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white dark:bg-zinc-800 p-6 rounded-full shadow-md mb-4">
+                        <img src="https://placehold.co/64x64" alt="Création sur mesure" />
+                    </div>
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-white">Création sur mesure</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white dark:bg-zinc-800 p-6 rounded-full shadow-md mb-4">
+                        <img src="https://placehold.co/64x64" alt="Des guides locaux et jeunes" />
+                    </div>
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-white">Des guides locaux et jeunes</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--review start-->
+    <div class="w-full mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold text-gray-900">Top Reviews on TripAdvisor</h1>
+            <p class="text-gray-600">What our customers are saying</p>
+        </div>
+        <div class="carousel-container w-[80vw] mx-auto">
+            <div class="carousel-item show">
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/50" alt="Cyrille V" class="w-12 h-12 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Cyrille V</div>
+                            <div class="text-sm text-gray-500">2023-05-15</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="flex items-center">
+                            <div class="text-green-500">★★★★★</div>
+                        </div>
+                        <p class="mt-1 text-gray-700 short-review">Vallée d’ourika<br>Une super découverte de la vallée et des cascades avec Mohamed qui est un guide passionné par sa région...</p>
+                        <p class="mt-1 text-gray-700 full-review hidden">Vallée d’ourika<br>Une super découverte de la vallée et des cascades avec Mohamed qui est un guide passionné par sa région. Nous avons passé une journée incroyable à explorer les magnifiques paysages et les cascades. Mohamed a partagé beaucoup d'informations intéressantes sur la culture locale et l'histoire de la région. C'était une expérience inoubliable!</p>
+                        <button class="text-blue-500 text-sm toggle-review">Lire la suite</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item hidden">
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/50" alt="Michael" class="w-12 h-12 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Michael</div>
+                            <div class="text-sm text-gray-500">2023-05-15</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="flex items-center">
+                            <div class="text-green-500">★★★★★</div>
+                        </div>
+                        <p class="mt-1 text-gray-700 short-review">Fascinating 1/2-Day Hike through the Ourika Valley<br>Fantastic experience! We met Hassan in the Ourika Valley, and he...</p>
+                        <p class="mt-1 text-gray-700 full-review hidden">Fascinating 1/2-Day Hike through the Ourika Valley<br>Fantastic experience! We met Hassan in the Ourika Valley, and he guided us through an amazing half-day hike. The views were breathtaking, and Hassan's knowledge of the area made the experience even more enjoyable. We learned a lot about the local flora and fauna, and the hike was the perfect combination of challenging and fun. Highly recommended!</p>
+                        <button class="text-blue-500 text-sm toggle-review">Lire la suite</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item hidden">
+                <div class="bg-gray-50 p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://via.placeholder.com/50" alt="moreau v" class="w-12 h-12 rounded-full">
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">moreau v</div>
+                            <div class="text-sm text-gray-500">2023-05-09</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="flex items-center">
+                            <div class="text-green-500">★★★★★</div>
+                        </div>
+                        <p class="mt-1 text-gray-700 short-review">Vallée de l’ourika et villages berbères<br>Une superbe expérience avec Hassan Magnifique rencontre Il nous fait découvrir au plus prêt sa régio...</p>
+                        <p class="mt-1 text-gray-700 full-review hidden">Vallée de l’ourika et villages berbères<br>Une superbe expérience avec Hassan Magnifique rencontre. Il nous fait découvrir au plus prêt sa région, les coutumes et les traditions des villages berbères. Les paysages sont à couper le souffle et l'accueil chaleureux. Nous avons beaucoup appris et passé un moment extraordinaire. Merci Hassan pour cette journée inoubliable!</p>
+                        <button class="text-blue-500 text-sm toggle-review">Lire la suite</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <div class="flex justify-between mt-4">
+                <button id="prev" class="bg-gray-800 text-white px-4 py-2 rounded">Previous</button>
+                <button id="next" class="bg-gray-800 text-white px-4 py-2 rounded">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const items = document.querySelectorAll('.carousel-item');
+        let currentItem = 0;
+
+        function showNextItem() {
+            items[currentItem].classList.remove('show');
+            items[currentItem].classList.add('hidden');
+            currentItem = (currentItem + 1) % items.length;
+            items[currentItem].classList.remove('hidden');
+            items[currentItem].classList.add('show');
+        }
+
+        function showPrevItem() {
+            items[currentItem].classList.remove('show');
+            items[currentItem].classList.add('hidden');
+            currentItem = (currentItem - 1 + items.length) % items.length;
+            items[currentItem].classList.remove('hidden');
+            items[currentItem].classList.add('show');
+        }
+
+        document.getElementById('next').addEventListener('click', showNextItem);
+        document.getElementById('prev').addEventListener('click', showPrevItem);
+
+        // Auto-rotate every 5 seconds
+        setInterval(showNextItem, 5000);
+
+        // Toggle review details
+        document.querySelectorAll('.toggle-review').forEach(button => {
+            button.addEventListener('click', () => {
+                const shortReview = button.previousElementSibling.previousElementSibling;
+                const fullReview = button.previousElementSibling;
+                if (fullReview.classList.contains('hidden')) {
+                    shortReview.classList.add('hidden');
+                    fullReview.classList.remove('hidden');
+                    button.textContent = 'Lire moins';
+                } else {
+                    shortReview.classList.remove('hidden');
+                    fullReview.classList.add('hidden');
+                    button.textContent = 'Lire la suite';
+                }
+            });
+        });
+    </script>
+    <!--review end-->
+
+    <!-- foooter -->
+
+    <section class="flex flex-col pt-20 bg-slate-800 text-white">
+        <div class="flex flex-wrap gap-5 justify-between self-center px-5 mt-1 w-full max-w-[1170px]">
+            <article class="flex flex-col text-base font-bold text-opacity-80">
+                <h2 class="text-lg">Language</h2>
+                <div class="flex items-center gap-5 justify-between px-5 py-4 mt-3 w-full text-sm font-semibold rounded border border-solid bg-slate-800 border-opacity-20 text-opacity-60"
+                    tabindex="0" aria-label="Language Selection">
+                    <div class="flex items-center gap-2">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1a8ac6fb9da36fcd1dba2cf0af060ea1f274ed89266dc72b1713cc51f53ffef?apiKey=93bb9bcd81d443648999334442ead41e&"
+                            alt="UK Flag" class="shrink-0 w-5 h-auto" />
+                        <select class="bg-slate-800 text-white border-none focus:outline-none">
+                            <option value="en-uk">English (UK)</option>
+                            <option value="fr-fr">Français (FR)</option>
+                        </select>
+                    </div>
+                </div>
+                <h2 class="mt-4 text-lg">Currency</h2>
+                <div class="flex items-center justify-between px-5 py-4 mt-3 text-sm font-semibold rounded border border-solid bg-slate-800 border-opacity-20 text-opacity-60"
+                    tabindex="0" aria-label="Currency Selection">
+                    <a href="#" class="flex items-center gap-2">
+                        <span></span>
+                    </a>
+                    <select class="bg-slate-800 text-white border-none focus:outline-none">
+                        <option value="usd">U.S. Dollar ($)</option>
+                        <option value="eur">Euro (€)</option>
+                    </select>
+                </div>
+            </article>
+
+            <article class="flex flex-col">
+                <h2 class="text-lg font-bold text-opacity-80">Company</h2>
+                <nav class="mt-5 leading-8 text-opacity-60">
+                    <a href="#" class="block">About Us</a>
+                    <a href="#" class="block">Blog</a>
+                    <a href="#" class="block">Press Room</a>
+                    <a href="#" class="block">Careers</a>
+                </nav>
+            </article>
+
+            <article class="flex flex-col">
+                <h2 class="text-lg font-bold text-opacity-80">Help</h2>
+                <nav class="mt-5 leading-8 text-opacity-60">
+                    <a href="#" class="block">Contact us</a>
+                    <a href="#" class="block">FAQs</a>
+                    <a href="#" class="block">Terms and conditions</a>
+                    <a href="#" class="block">Privacy policy</a>
+                    <a href="#" class="block">Sitemap</a>
+                </nav>
+            </article>
+
+            <article class="flex flex-col">
+                <h2 class="text-lg font-bold text-opacity-80">Payment methods</h2>
+                <div class="flex gap-1.5 mt-5 flex-wrap">
+                    <img src="img/2.png" alt="Payment Method 2" class="shrink-0 w-[39px] h-auto" />
+                    <img src="img/3.png" alt="Payment Method 3" class="shrink-0 w-10 h-auto" />
+                    <img src="img/4.png" alt="Payment Method 4" class="shrink-0 w-10 h-auto" />
+                    <img src="img/5.png" alt="Payment Method 5" class="shrink-0 w-10 h-auto" />
+                    <img src="img/6.png" alt="Payment Method 6" class="shrink-0 w-10 h-auto" />
+                    <img src="img/7.png" alt="Payment Method 7" class="shrink-0 w-10 h-auto" />
+                    <img src="img/8.png" alt="Payment Method 8" class="shrink-0 w-10 h-auto" />
+                    <img src="img/9.png" alt="Payment Method 9" class="shrink-0 w-[39px] h-auto" />
+                    <img src="img/11.png" alt="Payment Method 10" class="shrink-0 w-10 h-auto" />
+                </div>
+                <h2 class="mt-8 text-lg font-bold text-opacity-80">Join Us</h2>
+                <p class="mt-5 text-base leading-8 text-opacity-60">Become a Tour guide for Us</p>
+            </article>
+        </div>
+        <footer
+            class="flex justify-center items-center px-16 py-2.5 mt-28 w-full text-base bg-black bg-opacity-20 text-opacity-60 max-md:px-5 max-md:mt-10">
+            <div class="container mx-auto flex justify-center items-center">
+                <span class="flex-auto my-auto">© 2024 Tour Guide. All Rights Reserved</span>
+                <a href="#" class="text-white mx-2"><img src="img/A.png" alt="Facebook"></a>
+                <a href="#" class="text-white mx-2"><img src="img/B.png" alt="Twitter"></a>
+                <a href="#" class="text-white mx-2"><img src="img/C.png" alt="Instagram"></a>
+                <a href="#" class="text-white mx-2"><img src="img/D.png" alt="Pinterest"></a>
+            </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <script src="js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+            const signUpButton = document.getElementById('sign-in');
+
+            burgerMenu.addEventListener('click', function () {
+                navLinks.classList.toggle('hidden');
+                signUpButton.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.fade-in');
+            const options = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            images.forEach(image => {
+                image.classList.add('opacity-0', 'translate-y-8');
+                observer.observe(image);
+            });
+        });
+    </script>
+
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/212695916759?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+        class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg z-50">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M12 2C6.476 2 2 6.477 2 12c0 1.966.568 3.801 1.554 5.344l-1.031 3.775 3.876-1.027A9.939 9.939 0 0 0 12 22c5.523 0 10-4.477 10-10s-4.477-10-10-10zm-.117 17.526c-1.727 0-3.445-.504-4.932-1.444l-.354-.215-2.608.69.694-2.548-.232-.372A7.967 7.967 0 0 1 4.078 12a8.012 8.012 0 1 1 7.805 7.526zm3.274-5.982c-.226-.113-1.332-.656-1.54-.732-.207-.075-.358-.113-.51.113s-.583.732-.715.882c-.132.15-.264.17-.49.057-.226-.113-.948-.349-1.805-1.113-.667-.594-1.118-1.328-1.248-1.554-.132-.226-.014-.349.1-.462.104-.103.226-.264.339-.396.114-.132.151-.226.226-.377.075-.15.038-.283-.02-.396-.057-.113-.51-1.22-.699-1.669-.184-.443-.37-.383-.51-.39-.133-.007-.283-.009-.433-.009s-.396.057-.604.283c-.207.226-.791.774-.791 1.883s.81 2.188.922 2.344c.113.15 1.6 2.449 3.879 3.435.542.234.966.374 1.297.48.545.173 1.04.149 1.43.091.436-.065 1.332-.545 1.519-1.071.188-.528.188-.981.132-1.071-.056-.09-.207-.15-.433-.264z">
+            </path>
+        </svg>
+    </a>
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

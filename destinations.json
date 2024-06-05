@@ -1,0 +1,315 @@
+[
+    {
+        "id": 1,
+        "title": "La Vallée d'Ourika",
+        "description": "La Vallée d'Ourika est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+
+    {
+        "id": 2,
+        "title": "Toubkal tour",
+        "description": "Toubkal tour est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+
+    {
+        "id": 3,
+        "title": "2/3 days hike",
+        "description": "2/3 days hike est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+
+    {
+        "id": 4,
+        "title": "Tizi noucheg tour",
+        "description": "Tizi noucheg tour est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+
+    {
+        "id": 5,
+        "title": "Three Valleys tour",
+        "description": "Three Valleys tour est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+
+    {
+        "id": 6,
+        "title": "Ourika visit ",
+        "description": "Ourika visit  est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+    
+    {
+        "id": 7,
+        "title": "Yagour Plateau ",
+        "description": "Yagour Plateau  est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "cascade",
+        "description": "La Vallée d'Ourika est une région pittoresque située dans les montagnes de l'Atlas, au sud de Marrakech. C'est une destination populaire pour les excursions d'une journée au départ de Marrakech, offrant un mélange de paysages magnifiques, de villages berbères traditionnels et de possibilités de randonnées.",
+        "points_of_interest": [
+            "Les Cascades de Setti-Fatma : Une série de sept cascades près du village de Setti-Fatma. Les randonnées pour atteindre ces cascades peuvent être un peu difficiles, mais les vues en valent la peine.",
+            "Les Villages Berbères : La vallée est parsemée de petits villages berbères, où vous pouvez découvrir la culture et le mode de vie traditionnel des Berbères. Certains villages notables incluent Aghbalou, Tnine Ourika et Setti-Fatma.",
+            "Le Jardin Bio-Aromatique de l'Ourika : Un jardin où sont cultivées des plantes aromatiques et médicinales locales. Il offre des visites guidées et des ateliers sur l'utilisation des plantes.",
+            "Le Souk Tnine de l'Ourika : Un marché hebdomadaire qui se tient chaque lundi, où les habitants des environs viennent pour acheter et vendre des produits. C'est une excellente occasion pour les visiteurs de découvrir la vie locale et acheter des souvenirs.",
+            "Safran de l'Ourika : Une ferme de safran où vous pouvez apprendre sur la culture du safran et acheter des produits à base de cette épice précieuse."
+        ],
+        "activities": [
+            "Randonnées et trekking",
+            "Visites culturelles",
+            "Dégustation de la cuisine locale",
+            "Relaxation et bien-être"
+        ],
+        "practical_tips": [
+            "Meilleure période pour visiter : La vallée peut être visitée toute l'année, mais le printemps et l'automne offrent les conditions les plus agréables. En été, il peut faire très chaud, et en hiver, les sommets des montagnes peuvent être enneigés.",
+            "Tenue vestimentaire : Portez des vêtements confortables pour la randonnée, des chaussures adaptées et apportez des couches supplémentaires, car les températures peuvent varier.",
+            "Transport : Il est possible de louer une voiture ou de prendre un taxi depuis Marrakech. Des excursions organisées sont également disponibles."
+        ],
+        "duration": "2 hours",
+        "price": "$50.00",
+        "rating": "4.5",
+        "reviews": "150",
+        "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.2865584258711!2d-7.675769893675748!3d31.22575120193282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbaaf678f9d1039%3A0xd968147e4179658d!2sSetti-Fatma!5e0!3m2!1sfr!2sma!4v1716636019675!5m2!1sfr!2sma",
+        "includes": [
+            "Guided tour of the valley",
+            "Entrance fees to the gardens",
+            "Transportation from Marrakech"
+        ],
+        "not_includes": [
+            "Meals and beverages",
+            "Personal expenses",
+            "Tips"
+        ]
+    }
+
+]
+
+

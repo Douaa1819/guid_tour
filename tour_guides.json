@@ -1,0 +1,39 @@
+{
+  "tour_guides": [
+    {
+      "id": 1,
+      "name": "Hassan Ait Mohamed",
+      "education_level": "Bachelor's degree",
+      "years_of_experience": 14,
+      "specialization": "Tourist guide",
+      "certifications": [
+        "Professional Guide Diploma"
+      ],
+      "contact": {
+        "phone": "+212695916759",
+        "email": "settifadmavillage@gmail.com"
+      },
+      "image_url": "https://example.com/hassan_image.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mohamed Elbaze",
+      "education_level": "Bachelor's degree",
+      "years_of_experience": 7,
+      "specialization": "Certified tourist guide",
+      "certifications": [
+        "Professional Guide Diploma"
+      ],
+      "contact": {
+        "phone": "+212695916759",
+        "email": "settifadmavillage@gmail.com"
+      },
+      "image_url": "https://example.com/mohamed_image.jpg"
+    }
+  ]
+}
+
+
+
+
+
